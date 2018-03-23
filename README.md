@@ -18,3 +18,8 @@ U Clamps - 2 Nos.
 Wire stripper
 Screwdriver - 2 Nos.
 Battery (6F22 9V)
+
+
+How to execute this projects: first install keil software in your windows computer, then copy each folder in example directory of keil IDE.
+
+Burn .hex file into 8052 microcontroller using USB - ASP programmer cable then reset your board and test your code.
