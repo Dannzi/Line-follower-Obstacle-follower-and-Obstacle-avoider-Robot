@@ -1,0 +1,70 @@
+C51 COMPILER V9.57.0.0   OBSTACLE_FOLLOWER                                                 02/02/2018 14:21:28 PAGE 1   
+
+
+C51 COMPILER V9.57.0.0, COMPILATION OF MODULE OBSTACLE_FOLLOWER
+OBJECT MODULE PLACED IN .\Objects\obstacle_follower.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE obstacle_follower.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\
+                    -Listings\obstacle_follower.lst) TABS(2) OBJECT(.\Objects\obstacle_follower.obj)
+
+line level    source
+
+   1          #include <stdio.h>
+   2          #include <reg52.h>
+   3          
+   4          #define lt 0x06;
+   5          #define rt 0x09;
+   6          #define st 0x0a;
+   7          #define rev 0x05;
+   8          #define stp 0x00;
+   9          
+  10          unsigned int a,i,j;
+  11          
+  12          
+  13          void main()
+  14          {
+  15   1        
+  16   1        while(1)
+  17   1        {
+  18   2          a = P1&0x0c;
+  19   2          if(a == 0x00)
+  20   2          {
+  21   3            P2 = stp;
+  22   3          }
+  23   2          if(a == 0x08)
+  24   2          {
+  25   3            
+  26   3            P2 = lt;
+  27   3          
+  28   3          }
+  29   2          if(a == 0x04)
+  30   2          {
+  31   3            
+  32   3            P2 = rt;
+  33   3            
+  34   3          }
+  35   2          if(a == 0x0c)
+  36   2          {
+  37   3            
+  38   3            P2 = st;
+  39   3            
+  40   3            
+  41   3          }
+  42   2      
+  43   2        }
+  44   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     50    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      6    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+C51 COMPILER V9.57.0.0   OBSTACLE_FOLLOWER                                                 02/02/2018 14:21:28 PAGE 2   
+
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

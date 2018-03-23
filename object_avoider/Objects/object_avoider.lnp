@@ -1,0 +1,5 @@
+".\Objects\STARTUP.obj",
+".\Objects\obsticle_avoider.obj" 
+TO ".\Objects\object_avoider" 
+PRINT(".\Listings\object_avoider.m51") RAMSIZE(256) 
+CODE( 0X0000-0X1FFF )
